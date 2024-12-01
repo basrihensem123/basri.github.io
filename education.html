@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  background-image: url('wallpaper10.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #f7f3f0;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        marquee {
+            color: #cfa7a7;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Gradient Header */
+        #grad1 {
+            height: auto;
+            background-image: linear-gradient(to right, #8e44ad, #3498db);
+            color: #f8b988;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #grad1 h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        #grad1 p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        /* Sidebar Styling */
+        .w3-sidebar {
+            background-color: #34495e;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .w3-sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .w3-sidebar a:hover {
+            background-color: #2c3e50;
+            color: #1abc9c;
+        }
+
+        .w3-sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        #openNav {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        #openNav:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        #main {
+            transition: margin-left 0.3s;
+            padding: 16px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #eef2f3;
+        }
+
+        tbody tr:hover {
+            background-color: #f1c40f;
+            color: #fff;
+        }
+
+        td img {
+            width: 150px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Marquee -->
+<marquee width="100%" bgcolor="#c6e2d3">" Don't Be Like An Empty Can, Be like A Chill Guy</marquee>
+
+<!-- Gradient Header -->
+<div id="grad1">
+    <h1>Welcome to My Education Page!</h1>
+    <p>Since I don’t have many photos of my education, I only have a few from my old phones (which unfortunately crashed).</p>
+</div>
+
+<!-- Sidebar Navigation -->
+<div id="mySidebar" class="w3-sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="pengalaman.html">Home</a>
+    <a href="myself.html">Myself</a>
+    <a href="gambar.html">Gallery</a>
+    <a href="family.html">Family</a>
+    <a href="kerja.html">Experience</a>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+    <button id="openNav" onclick="openNav()">☰ Sidebar</button>
+    <!-- Main Table Content -->
+    <table>
+        <thead>
+            <tr>
+                <th>Achievements</th>
+                <th>Images</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One of the best, I got 7A and 1B for Darjah 5 in SKA</td>
+                <td><img src="belajar7.jpg" alt="Achievement 1"></td>
+            </tr>
+            <tr>
+                <td>One of the worst, I managed to pass Darjah 6 in SKA to proceed into Darjah Khas</td>
+                <td><img src="belajar2.jpg" alt="Achievement 2"></td>
+            </tr>
+            <tr>
+                <td>In SPM, I got 4A 3B 1C 1D which is ridiculous for an average student like me hehe.</td>
+                <td><img src="belajar4.jpg" alt="Achievement 3"></td>
+            </tr>
+            <tr>
+                <td>I joined Ebit Lew's program to build motivation and change lives in three days, two nights.</td>
+                <td><img src="belajar5.jpg" alt="Achievement 4"></td>
+            </tr>
+            <tr>
+                <td>All these certificates I got after finishing my internship at PTDI Johor campus Pasir Gudang.</td>
+                <td><img src="belajar6.jpg" alt="Achievement 5"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>"Education is so worthy and valuable that even the least knowledgeable appear smarter than a professor." | </a></p>
+</footer>
+
+<!-- JavaScript for Sidebar -->
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+</body>
+</html>
+
+
+
